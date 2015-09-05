@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property int x,y,w,h;
+@property int a,b,c,d;
+
+
+
+
 - (IBAction)personalDetailsSwitchAction:(id)sender;
 
 - (IBAction)professionalDetailsSwitchAction:(id)sender;
@@ -20,6 +26,7 @@
 
 @property UIView * personalDetailsView;
 @property UIView * professionalDetailsView;
+@property UIScrollView * scrollView;
 
 @end
 
