@@ -10,6 +10,16 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)personalDetailsSwitchAction:(id)sender;
+
+- (IBAction)professionalDetailsSwitchAction:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UISwitch *personalDetailsSwitchOutlet;
+
+@property (weak, nonatomic) IBOutlet UISwitch *professionalDetailsSwitchOutlet;
+
+@property UIView * personalDetailsView;
+@property UIView * professionalDetailsView;
 
 @end
 
