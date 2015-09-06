@@ -40,11 +40,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6Q-qO-yzN">
+                                <rect key="frame" x="215" y="151" width="51" height="31"/>
+                                <connections>
+                                    <action selector="educationalDetailsSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="sDb-1P-9Og"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-B2-SUc">
+                                <rect key="frame" x="215" y="209" width="51" height="31"/>
+                                <connections>
+                                    <action selector="contactDetailsSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="zQB-X6-UOt"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13k-rG-pjg">
+                                <rect key="frame" x="49" y="151" width="156" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAg-Xg-cTe">
+                                <rect key="frame" x="49" y="209" width="156" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="contactDetailsSwitchOutlet" destination="eZ9-B2-SUc" id="QFX-mW-m5U"/>
+                        <outlet property="educationDetailsSwitchOutlet" destination="i6Q-qO-yzN" id="1D6-45-Z3K"/>
                         <outlet property="personalDetailsSwitchOutlet" destination="7AH-Wo-BCc" id="Imn-2n-igW"/>
                         <outlet property="professionalDetailsSwitchOutlet" destination="njy-6U-vUL" id="6EW-Zt-BPN"/>
                     </connections>

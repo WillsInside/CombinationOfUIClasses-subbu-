@@ -17,15 +17,21 @@
 
 
 - (IBAction)personalDetailsSwitchAction:(id)sender;
-
 - (IBAction)professionalDetailsSwitchAction:(id)sender;
+- (IBAction)educationalDetailsSwitchAction:(id)sender;
+- (IBAction)contactDetailsSwitchAction:(id)sender;
+
 
 @property (weak, nonatomic) IBOutlet UISwitch *personalDetailsSwitchOutlet;
 
 @property (weak, nonatomic) IBOutlet UISwitch *professionalDetailsSwitchOutlet;
+@property (weak, nonatomic) IBOutlet UISwitch *educationDetailsSwitchOutlet;
+@property (weak, nonatomic) IBOutlet UISwitch *contactDetailsSwitchOutlet;
 
 @property UIView * personalDetailsView;
 @property UIView * professionalDetailsView;
+@property UIView * educationalDetailsView;
+@property UIView * contactDetailsView;
 @property UIScrollView * scrollView;
 
 @end
